@@ -1,0 +1,62 @@
+This disk contains F83.COM, a public domain implementation of FORTH-83 that
+is ready to run. It also contains source files in squeezed format.  I have 
+squeezed them using the public domain utility NSQ and you can unsqueeze them 
+with the NUSQ utility. Squeezed files have a Q in the file type.
+
+The original Laxen-Perry distribution had these files squeezed with a program
+that took hours (!) to run to unsqueeze. AUSQ will run in minutes and the 
+squeezed files take up less space than the original distribution disk. Make B: 
+(or C:) your default drive. Have plenty of room on your default drive and then 
+type A:AUSQ A:filename.BQK to make filename.BLK on your default drive. 
+
+CRCK4 or CRCK is a hash checksum program to help you tell if you have good 
+copies of the files.  Type CRCK4 *.* (or CRCK *.*) and see if what you have 
+agrees with the values listed below. This should assure you that you have a 
+good copy of the disk. 
+
+F83.COM is the ready to run FORTH system.  
+
+The MS-DOS version is set up to use the IBM-PC cursor positioning codes.
+This won't work on other MS-DOS machines such as the TI Professional. 
+To fix this, start F83, then type EDITOR DUMB and you can use the editor 
+commands as though you have a dumb terminal.
+ 
+The VIEW word expects certain source blocks to be on drive A: and certain
+source files to be on drive B:.  If you have a hard disk system, you can 
+follow the directions in README.PC to recompile your system with all of the 
+source blocks on your hard disk and the VIEW file numbers will be set up 
+correctly. 
+
+CRCK ver 4.2B (MS DOS VERSION )  Here are the files on the MS-DOS disk:
+CTL-S pauses, CTL-C aborts
+                                                                            
+
+--> FILE:  F83     .COM         CRC = D3 3E  FORTH system compiled.
+--> FILE:  README  .1ST         CRC =        This file
+--> FILE:  NUSQ    .COM         CRC = DD 00  The unsqueeze program
+--> FILE:  NSQ     .EXE         CRC = 23 CA  The squeeze program
+--> FILE:  README  .PQ          CRC = 2D F6  Original F83 instructions
+--> FILE:  F83-FIXS.TQT         CRC = 24 CD  Changes from F83 v.1.0
+                         These "blocks" are the F83 sources squeezed
+--> FILE:  KERNEL86.BQK         CRC = 2B 60  Kernel source
+--> FILE:  META86  .BQK         CRC = 5B BE  Metacompiler source
+--> FILE:  CPU8086 .BQK         CRC = 4D 6E  8086 dependent code   
+--> FILE:  EXTEND86.BQK         CRC = F5 C0  Extensions source
+--> FILE:  UTILITY .BQK         CRC = ED 3E  The UTILITY source 
+                         These blocks are applications
+--> FILE:  HUFFMAN .BQK         CRC = 7C B7  A VERY slow compression program
+--> FILE:  CLOCK   .BQK         CRC = 47 A2  Source for a calendar example
+--> FILE:  EXPAND86.BQK         CRC = 3F F6  Original source to expand .HUF
+--> FILE:  BASIC   .BQK         CRC = 37 E6  A BASIC compiler in FORTH-83
+
+
+Ted Shapin. July 31, 1984.                                      
+
+
+
+
+
+
+
+
+
